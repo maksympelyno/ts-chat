@@ -5,7 +5,7 @@ import useConversation from "../../zustand/useConversation";
 import useGetConversations from "../../hooks/useGetConversations";
 
 const SearchInput = () => {
-  const [search, setSearch] = useState("");
+  const [search, setSearch] = useState<string>("");
   const { setSelectedConversation } = useConversation();
   const { conversations } = useGetConversations();
 
